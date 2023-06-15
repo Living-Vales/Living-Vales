@@ -1,4 +1,5 @@
 import ic_logo_lv from '../assets/ic_logo_lv.png'
+import ic_logo_inova from '../assets/ic_logo_inova.png'
 import styled from "styled-components";
 import { defaultTheme } from "./defaultThame";
 import { devices } from "./responsive";
@@ -17,7 +18,16 @@ export const DivImg = styled.div`
     background-repeat: no-repeat;
     height: 3rem;
     width: 13rem;
-    margin: 1rem 1rem 1rem 2rem;
+    margin: 1rem 0.1rem 1rem 2rem;
+`
+
+export const DivInovaLogo = styled.div`
+    background-image: url(${ic_logo_inova});
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3rem;
+    width: 5rem;
+    margin: 1rem 0.1rem 1rem 1rem;
 `
 
 export const DivContainer = styled.div`

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useContext } from 'react';
-import {HeaderStyle, Logo, SignOut, DivLogout} from './HeaderCustomStyle'
+import {HeaderStyle, Logo, SignOut, DivLogout, DivInovaLogo, ContainerLogo } from './HeaderCustomStyle'
 import { AuthContext } from '../../contexts/auth';
 
 
@@ -22,8 +22,11 @@ export function HeaderCustom( ) {
     return (
         <HeaderStyle> 
             <>
-            <Logo onClick={home} />
-    
+            <ContainerLogo >
+                <Logo onClick={home} />
+                <DivInovaLogo/>
+            </ContainerLogo>
+
             <DivLogout onClick={exit}>
             <h6>Sair</h6>
             <SignOut
