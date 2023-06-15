@@ -1,14 +1,13 @@
 import { FormSingInCustom } from "../components/Form/FormSingIn";
-import { DivPageContainer, DivContainer, DivHeader, DivImg, DivInovaLogo } from "../styles/SingIn";
 import { StyledFooter } from "../components/Footer/StyledFooter";
-
+import { DivPageContainer, DivContainer, DivHeader } from "../styles/SingIn";
+import { LogosHeader } from "../components/Header/LogosHeader";
 
 function Signin() {
     return (
         <>
             <DivHeader>
-                <DivImg/>
-                <DivInovaLogo/>
+                <LogosHeader/>
             </DivHeader>
             <DivPageContainer>
                 <DivContainer>

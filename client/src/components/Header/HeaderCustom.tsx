@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import React, { useContext } from 'react';
-import {HeaderStyle, Logo, SignOut, DivLogout, DivInovaLogo, ContainerLogo } from './HeaderCustomStyle'
+import { useContext } from 'react';
+import { HeaderStyle, SignOut, DivLogout, ContainerLogo } from './HeaderCustomStyle'
 import { AuthContext } from '../../contexts/auth';
+import { LogosHeader } from "./LogosHeader";
 
 
 export function HeaderCustom( ) {
@@ -14,17 +15,12 @@ export function HeaderCustom( ) {
         logout();
         navigate("/login") 
     }
-    
-    const home = async () => {
-        navigate('/');
-    }
 
     return (
         <HeaderStyle> 
             <>
             <ContainerLogo >
-                <Logo onClick={home} />
-                <DivInovaLogo/>
+                <LogosHeader/>
             </ContainerLogo>
 
             <DivLogout onClick={exit}>
