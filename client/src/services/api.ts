@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+//By default, the dev server (dev command) runs in development mode and the build command runs in production mode.
 const url = import.meta.env.MODE === 'development' ? 'http://localhost:3001/api' : 'https://livingvales.interact.com.br/api'
 
 const api = axios.create({
